@@ -1,52 +1,137 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>WEB700</title>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	</head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Frances Limlengco</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/htmlDemo">HTML Demo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Student Name</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
-				</ul>
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
-					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
-					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
-				</ul>
-			</div>
-		</nav>
-
-		<div class="container">
-			<div class="row">
-				<main class="col-md-12">
-
-
-
-					<!-- Start your code here -->
-					
-					
-					
-					<!-- End your code here  -->
-
-
-
-				</main>
-			</div>
-		</div>
-
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</body>
+    <div class="container">
+        <h1>HTML Demo</h1>
+        
+        <h2>Tables (Jane Austen Novels)</h2>
+        <table class="table">
+            <caption>Jane Austen Books</caption>
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Publish Year</th>
+                    <th>About</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pride and Prejudice</td>
+                    <td>1813</td>
+                    <td>A classic of English literature, written with incisive wit and superb character delineation, it centers on the burgeoning relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner.</td>
+                </tr>
+                <tr>
+                    <td>Sense and Sensibility</td>
+                    <td>1811</td>
+                    <td>It follows the romantic lives of the Dashwood sisters, Elinor and Marianne, as they navigate love and marriage after their father's death leaves their family in financial ruin.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">End of List</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <table class="table">
+            <caption>Jane Austen Films</caption>
+            <thead>
+                <tr>
+                    <th>Movie Title</th>
+                    <th>Release Year</th>
+                    <th>Actors</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Pride and Prejudice</td>
+                    <td>1995</td>
+                    <td>Jennifer Ehle as Elizabeth Bennet, Colin Firth as Mr. Darcy</td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td>Keira Knightley as Elizabeth, Matther Macfadyen as Darcy</td>
+                </tr>
+                <tr>
+                    <td>Sense and Sensibility</td>
+                    <td>1995</td>
+                    <td>Emma Thompson as Elinor Dashwood</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">End of List</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <p>These tables provide an overview of Jane Austen's literary works and their film adaptations.</p>
+        
+        <h2>Lists (What to do Toronto)</h2>
+        <ol>
+            <li>Niagara Falls</li>
+            <li>Parks
+                <ul>
+                    <img src= https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/21/23/3b/the-cn-tower-standing.jpg?w=700&h=-1&s=1 alt= "Toronto Island Park">
+                    <img src= https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/d4/77/1a/scarborough-bluffs.jpg?w=700&h=-1&s=1 alt= "Scarborough Bluffs">
+                    <img src= https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/7d/1f/23/high-park.jpg?w=700&h=400&s=1 alt= "High Park">
+                </ul>
+            </li>
+            <li>CN Tower</li>
+            <li>Royal Ontario Museum</li>
+            <li>Rogers Centre</li>
+        </ol>
+        
+        <p>This section shows some places to go and visit in Toronto.</p>
+        
+        <h2>Images</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in halfpipe">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.png" alt="React Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Node.js_logo.svg" alt="Node.js Logo">
+        
+        <p>This section shows an image of a snowboarder.</p>
+        
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <p>This section demonstrates the use of an HTML5 audio player.</p>
+        
+        <h2>Video</h2>
+        <video controls>
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg" type="video/ogg">
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        
+        <p>This section shows a video of the Earth.</p>
+    </div>
+</body>
 </html>
